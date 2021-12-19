@@ -1,0 +1,226 @@
+h1
+{
+    font-size: 4rem;
+}
+
+.fundo
+{
+    background-image: linear-gradient(white, white, var(--color-primary) );
+    width:100%;
+    height:65vh;
+    padding:5rem;
+    position: relative;
+}
+
+.area_resumo_cursos
+{
+    position: absolute;
+    top:26rem;
+    left:26rem;
+    width:88rem;
+    border-radius:8px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: 4px 4px 8px rgba(136, 136, 136, 0.4);
+    
+}
+
+.texto
+{
+    text-align: center;
+}
+
+.cursos
+{
+    height:120vh;
+    background-color: var(--color-secundary) ;
+} 
+
+.secao_area_estudar
+{
+    display:flex;
+    background-color: var(--color-secundary) ;
+}
+
+.texto_area_estudar
+{
+    margin:5rem;
+    text-align: center;
+}
+
+.texto_area_estudar h1
+{
+    margin-bottom: 2rem;
+    color: var(--color-text-secundary); 
+}
+
+.texto_area_estudar div
+{
+    text-align: justify; 
+    color: var(--color-text-secundary);   
+}
+
+.secao_area_voluntario
+{
+    display:flex;
+  
+}
+
+.texto_area_voluntario
+{
+    margin:5rem;
+    text-align: center;
+}
+
+.texto_area_voluntario h1
+{
+    margin-bottom: 2rem;
+}
+
+.texto_area_voluntario div
+{
+    text-align: justify;    
+}
+
+.rodape
+{
+    background-color: var(--color-secundary) ;   
+    color:var(--color-text-secundary);
+}
+
+@media(width < 1200px)
+{
+
+    .fundo
+    {
+        position: static;
+        height: auto;
+    }
+
+    .cursos
+    {
+        height:auto;
+    }
+
+    .area_resumo_cursos
+    {
+        position: static;
+        top: 0;
+        left:0;      
+        width:75rem;
+    }
+
+    .secao_area_estudar
+    {
+        padding: 1rem;
+    }
+
+    .secao_area_voluntario
+    {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .animacao
+    {
+        width:  500px;
+    }
+}
+
+/*menor que 542*/
+@media(width < 542px)
+{
+
+    .fundo
+    {
+        position: static;
+        height: auto;
+    }
+
+    .cursos
+    {
+        height:auto;
+    }
+
+    .area_resumo_cursos
+    {
+        position: static;
+        top: 0;
+        left:0;      
+        width:30rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secao_area_estudar
+    {
+        padding: 1rem;
+    }
+
+    .secao_area_voluntario
+    {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .animacao, .animacao_estudante
+    {
+        display:none
+    }
+
+    h1
+    {
+        font-size: 2.5rem;
+    }
+}
+
+/*menor que 322*/
+@media(width < 322px)
+{
+
+    .fundo
+    {
+        position: static;
+        height: auto;
+    }
+
+    .cursos
+    {
+        height:auto;
+    }
+
+    .area_resumo_cursos
+    {
+        position: static;
+        top: 0;
+        left:0;      
+        width:22rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secao_area_estudar
+    {
+        padding: 0.5rem;
+    }
+
+    .secao_area_voluntario
+    {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .animacao, .animacao_estudante
+    {
+        display:none
+    }
+
+    h1
+    {
+        font-size: 2.5rem;
+    }
+}

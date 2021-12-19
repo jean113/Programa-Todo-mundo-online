@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap');
+
+:root
+{
+    font-size: 60%;
+
+    --color-primary: #C1D4D9;
+    --color-secundary: #326173;
+    --color-text-secundary: white;
+
+    --color-links: #6F96A6;
+    --color-links-secundary: #326173;
+
+    --color-button: #8c3503;
+    --color-button-secundary: #4F1E02;
+}
+
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body, #root
+{
+    height:100vh;
+}
+
+body
+{
+    font: 400 1.8rem Mukta;
+}
